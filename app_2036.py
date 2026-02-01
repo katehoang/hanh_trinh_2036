@@ -13,7 +13,7 @@ st.sidebar.info("Mẹ của 3 con phải mạnh mẽ. Python là vũ khí, khôn
 st.sidebar.warning("TUYỆT ĐỐI KHÔNG FUTURE. Chỉ tập trung giá trị dài hạn.")
 
 # 2. LẤY GIÁ THỊ TRƯỜNG
-defcd C:\Users\ASUS\Desktop\tldm get_price(symbol):
+def get_price(symbol):
     try:
         ticker = yf.Ticker(f"{symbol}-USD")
         price = ticker.fast_info['last_price']
